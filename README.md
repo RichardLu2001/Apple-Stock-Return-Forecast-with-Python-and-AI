@@ -1,1 +1,4 @@
-# Apple-Stock-Return-Forecast-with-Python-and-AI
+1.	Preprocessing: Downloaded two decades of AAPL and other companies’ ticker data and performed EDA and feature engineering 
+2.	Feature Selection and Regime Detection: Used information coefficient and ratio (IC/IR) to select 30 most relevant candidate features, applied Hidden Markov Model on AAPL returns, volumes and volatilities to detect regime changes 
+3. Model Training and Testing: Experimented with a custom loss function that combines MSE and cross-entropy with adjustable weights to ensure both directional and numerical accuracy of return predictions, trained an LSTM+1D CNN model on the most recent regime’s data, achieved 57% directional accuracy (rise vs fall) in the testing set
+4.	LLM Assistant: Used API of llama-3.3 model hosted on Groq to create an assistant that can answer questions on stock data
